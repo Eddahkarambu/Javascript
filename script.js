@@ -50,3 +50,57 @@ export const selectWinner = (player) => {
     var item = choices[Math.floor(Math.random()*choices.length)];
 
 }
+
+
+
+const computerPlay =() => {
+    const choices = ["rock", "paper", "scissors"];
+  var computer = choices[Math.floor(Math.random() * choices.length)];
+  return computer
+  
+}
+
+
+const playRound = (player, computer) => {
+  if (player=== "rock" && computer === "scissors") {
+     return "player wins"
+  }
+
+  if (player === "rock" && computer === "paper") {
+     return "computer wins"
+  }
+
+  if (player === "rock" && computer === "rock") {
+   return "its a tie"
+  }
+// two
+    if (player=== "paper" && computer === "scissors") {
+     return "computer wins"
+  }
+
+  if (player === "paper" && computer === "paper") {
+     return "its a tie"
+  }
+
+  if (player === "paper" && computer === "rock") {
+   return "computer wins"
+  }
+  // three
+      if (player=== "scissors" && computer === "scissors") {
+    return "its a tie"
+  }
+
+  if (player === "scissors" && computer === "paper") {
+     return "player wins"
+  }
+
+  if (player === "scissors" && computer === "rock") {
+    return "computer wins"
+  }
+}
+let playerSelection = "rock";
+playerSelection=(playerSelection.toLowerCase());
+const computerSelection = computerPlay();
+console.log(`computer has chosen ${computerSelection}`)
+console.log(`computer has chosen ${playerSelection}`)
+console.log(playRound(playerSelection, computerSelection));
