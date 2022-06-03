@@ -45,7 +45,7 @@ console.log('perimeter =', c.perimeter().toFixed(2));
 
 
 // GAME ONE
-export const selectWinner = (player) => {
+ const selectWinner = (player) => {
     const choices = ["rock", "paper", "scissors"];
     var item = choices[Math.floor(Math.random()*choices.length)];
 
@@ -102,5 +102,5 @@ let playerSelection = "rock";
 playerSelection=(playerSelection.toLowerCase());
 const computerSelection = computerPlay();
 console.log(`computer has chosen ${computerSelection}`)
-console.log(`computer has chosen ${playerSelection}`)
+console.log(`player has chosen ${playerSelection}`)
 console.log(playRound(playerSelection, computerSelection));
