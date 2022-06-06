@@ -104,3 +104,34 @@ const computerSelection = computerPlay();
 console.log(`computer has chosen ${computerSelection}`)
 console.log(`player has chosen ${playerSelection}`)
 console.log(playRound(playerSelection, computerSelection));
+
+
+let computer = 0;
+let player = 0;
+
+for(let i= 0; i<5; i++){
+  let answer = prompt("kindly enter between rock, paper and scissors")
+ console.log(answer)
+  const computerSelection = computerPlay();
+  console.log(computerSelection)
+  let winner = playRound(computerSelection, answer)
+  if (winner =="computer wins"){
+    computer= computer + 1
+  }
+if (winner =="player wins"){
+  player = player + 1  
+}
+}
+console.log(computer)
+console.log(player)
+
+if (computer > player){
+  console.log("computer wins") 
+}
+else if (player >  computer){
+    console.log("player wins") 
+}else{
+    console.log("its a tie") 
+}
+
+
