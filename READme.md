@@ -2,7 +2,7 @@ Author
 Eddah Karambu
 
 Description
-We offer full service catering for any event.We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.Do not hesitate to contact us.
+
 
 By Eddah Karambu
 Setup/Installation Requirements
